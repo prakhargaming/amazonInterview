@@ -1,0 +1,846 @@
+\documentclass{article}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\lstset{
+    basicstyle=\ttfamily,
+    breaklines=true,
+    keepspaces=true,
+    breakatwhitespace=false,
+    columns=flexible
+}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    pdftitle={Prakhar_Sinha_Resume},
+    pdfpagemode=FullScreen,
+    linkbordercolor={1 1 1}, % No border around links
+    urlbordercolor={1 1 1} % No border around URLs
+}
+
+
+% Title, author, and date
+\title{Amazon Interview Preparation}
+\author{Prakhar Sinha}
+\date{\today}
+
+\begin{document}
+
+% Display the title page
+\maketitle
+
+\section{Resources}
+\subsection{General}
+\begin{itemize}
+\item \href{https://medium.com/@brii.nguyen/how-i-landed-an-internship-at-amazon-2024-having-only-applied-to-here-e5d601a34b22}{Britney's Article}
+\item \href{https://www.amazon.jobs/content/en/our-workplace/leadership-principles}{Leadership Principles}
+\item \href{https://www.aboutamazon.com/news/workplace/what-do-each-of-amazons-leadership-principles-really-mean}{Article Expanding on Leadership Principals}
+\item \href{https://docs.google.com/document/d/1K10A6a3XzRr9PXnlBlxbPvlhWFe7tqQTXuYdU4ggF4M/edit?usp=sharing}{Britney Mock Interview Notes}
+\item \href{https://www.interviewcake.com/data-structures-reference}{Interview Resources from InterviewCake}
+\end{itemize}
+
+\subsection{Interview}
+\begin{itemize}
+\item \href{https://grow.google/certificates/interview-warmup/category/}{Google Warmup}; AI powered site for mock interviews.
+\item \href{https://www.pramp.com/#/}{Pramp}; "is a site to conduct mock interviews on and it is really useful for this."
+\end{itemize}
+
+\section{Leadership Principals}
+\textit{"We use our Leadership Principles every day, whether we’re discussing ideas for new projects or deciding on the best way to solve a problem. It’s just one of the things that makes Amazon peculiar."}
+\begin{enumerate}
+\item \textbf{Customer Obsession} \textit{Leaders start with the customer and work backwards. They work vigorously to earn and keep customer trust. Although leaders pay attention to competitors, they obsess over customers.}
+
+One time I went above and beyond for a customer or client was during my time at UC Davis Health. I was working under Doctor Farzad at the time and in the middle of my onboarding process, the lab was set to move from UC Davis to Emory Univeristy in Georgia. This meant that my time at UCDHS would be cut short and I would only be given 2 months to work on my project. As a result, I realized, in order to deliver any sort of product, I'd have to shift into high gear (customer obsession). I worked backwards. I started with what my professor needed from me and then I thought what are the steps I can take to get there? I was the only one assigned to this project so there was no choice other than for me to take ownership of my work (ownership). I started by diving deep into the subject matter, which was a computer vision assignment [go deeper into the thingy]. Given my lack of time, there wasn't a possiblity for me to train a U-NET from scratch and make annotated data and stuff like that. Therefore, I sought to look at preexisting code to try to adapt that to my use case. Therefore, I looked into Meta's Segment Anything Model...
+
+\item \textbf{Ownership} \textit{Leaders are owners. They think long term and don’t sacrifice long-term value for short-term results. They act on behalf of the entire company, beyond just their own team. They never say “that’s not my job.”}
+
+One time I took ownership on a product was during my internship at VDart Inc. Our team was composed only interns and we had very few oversight from the senior engineers in the company. As a result, taking ownership was not just an option, it was a necessity if we wanted to get this product out on time. A specific example of this was when I was working on the backend of a demo that we were working on. I was working on creating a GenAI solution that required heavy referencing of an internal company database and correctness was key. Since I am well versed in what is going on in AI right now, I knew that integrating RAG technology in the model would've greatly benefited the company and the product in the long run... 
+
+\item \textbf{Invent and Simplify} \textit{Leaders expect and require innovation and invention from their teams and always find ways to simplify. They are externally aware, look for new ideas from everywhere, and are not limited by “not invented here.” As we do new things, we accept that we may be misunderstood for long periods of time.}
+
+An example of when I invented and simplified was during my time at UC Davis health. I was tasked with building a computer vision model to quickly segment medical images. The ML model would generate a bitmask... Due to complications during my on boarding process, I was made aware I would only have 2 months to work on this task. As such I had to innovate quickly. They say pressure creates diamonds and due to my limited time to work on this project I made heavy use of available resources to come up with a robust and reliable solution in a short amount of time...invented a new and novel approach to medical image segmentation by integrating it with legacy .NET codebases using csharp.NET...  
+
+\item \textbf{Are Right, A Lot} \textit{Leaders are right a lot. They have strong judgment and good instincts. They seek diverse perspectives and work to disconfirm their beliefs.}
+
+The best example of this would be my time as an head of the projects division at Neurotech@Davis for 2 years. During that time span I primarily led the club's technical endeavours and made strategic decisions that hugely benefited the club in the long run
+\begin{enumerate}
+    \item Focused heavily on recruitment of students from a CS/Data Science background
+    \item Division of the club into different recruitment tracks
+    \item ect.
+\end{enumerate}
+
+\item \textbf{Learn and Be Curious} \textit{Leaders are never done learning and always seek to improve themselves. They are curious about new possibilities and act to explore them.}
+
+Talk about school and how I've always been interested in many different parts of my academics like history and philosophy but especially talk about how I have always been willing to pick up new skills in cs and cs-adjacent fields. Especially math.
+
+\item \textbf{Hire and Develop the Best} \textit{Leaders raise the performance bar with every hire and promotion. They recognize exceptional talent, and willingly move them throughout the organization. Leaders develop leaders and take seriously their role in coaching others. We work on behalf of our people to invent mechanisms for development like Career Choice.}
+
+Talk about recruiting specific fields of study for Neurotech?
+
+\item \textbf{Insist on the Highest Standards} \textit{Leaders have relentlessly high standards — many people may think these standards are unreasonably high. Leaders are continually raising the bar and drive their teams to deliver high quality products, services, and processes. Leaders ensure that defects do not get sent down the line and that problems are fixed so they stay fixed.}
+
+\item \textbf{Think Big} \textit{Thinking small is a self-fulfilling prophecy. Leaders create and communicate a bold direction that inspires results. They think differently and look around corners for ways to serve customers.}
+
+\item \textbf{Bias for Action} \textit{Speed matters in business. Many decisions and actions are reversible and do not need extensive study. We value calculated risk taking.}
+
+\item \textbf{Frugality} \textit{Accomplish more with less. Constraints breed resourcefulness, self-sufficiency, and invention. There are no extra points for growing headcount, budget size, or fixed expense.}
+
+\item \textbf{Earn Trust} \textit{Leaders listen attentively, speak candidly, and treat others respectfully. They are vocally self-critical, even when doing so is awkward or embarrassing. Leaders do not believe their or their team’s body odor smells of perfume. They benchmark themselves and their teams against the best.}
+
+\item \textbf{Dive Deep} \textit{Leaders operate at all levels, stay connected to the details, audit frequently, and are skeptical when metrics and anecdote differ. No task is beneath them.}
+
+\item \textbf{Have Backbone; Disagree and Commit}\textit{ Leaders are obligated to respectfully challenge decisions when they disagree, even when doing so is uncomfortable or exhausting. Leaders have conviction and are tenacious. They do not compromise for the sake of social cohesion. Once a decision is determined, they commit wholly.}
+
+\item \textbf{Deliver Results} \textit{Leaders focus on the key inputs for their business and deliver them with the right quality and in a timely fashion. Despite setbacks, they rise to the occasion and never settle.}
+
+\item \textbf{Strive to be Earth’s Best Employer} \textit{Leaders work every day to create a safer, more productive, higher performing, more diverse, and more just work environment. They lead with empathy, have fun at work, and make it easy for others to have fun. Leaders ask themselves: Are my fellow employees growing? Are they empowered? Are they ready for what’s next? Leaders have a vision for and commitment to their employees’ personal success, whether that be at Amazon or elsewhere.}
+
+\item \textbf{Success and Scale Bring Broad Responsibility} \textit{We started in a garage, but we’re not there anymore. We are big, we impact the world, and we are far from perfect. We must be humble and thoughtful about even the secondary effects of our actions. Our local communities, planet, and future generations need us to be better every day. We must begin each day with a determination to make better, do better, and be better for our customers, our employees, our partners, and the world at large. And we must end every day knowing we can do even more tomorrow. Leaders create more than they consume and always leave things better than how they found them.}
+
+\end{enumerate}
+
+\section{Behavioral}
+
+\subsection{Prepared Responses}
+
+\textbf{Tell me about yourself}
+
+Hi my name is Prakhar Sinha. I previously did work as a SWE Intern at VDart Inc., Computer Vision Specialist at UC Davis Health and I was the head of the projects divison at Neurotech@Davis, where we specialzied in developing brain computer interfaces. I am a recent computer science grad from UC Davis and I currently hold expertise in the areas of AI/ML with a specialization in computer vision. I am also have a lot of experience in front end web development with React, Typescript and CSS/Tailwind. \newline
+
+\textbf{Tell me about a time when you went above and beyond for a customer or client.}
+
+One time I went above and beyond for a customer or client was during my time at UC Davis Health. I was working under Doctor Farzad at the time and in the middle of my onboarding process, the lab was set to move from UC Davis to Emory Univeristy in Georgia. This meant that my time at UCDHS would be cut short and I would only be given 2 months to work on my project. As a result, I realized, in order to deliver any sort of product, I'd have to shift into high gear (customer obsession). I worked backwards. I started with what my professor needed from me and then I thought what are the steps I can take to get there? I was the only one assigned to this project so there was no choice other than for me to take ownership of my work (ownership). I started by diving deep into the subject matter, which was a computer vision assignment [go deeper into the thingy]. Given my lack of time, there wasn't a possiblity for me to train a U-NET from scratch and make annotated data and stuff like that. Therefore, I sought to look at preexisting code to try to adapt that to my use case. Therefore, I looked into Meta's Segment Anything Model... \newline
+
+\textbf{Tell me about a time when you were faced with a problem that had a number of possible solutions.}
+\begin{itemize}
+\item When I was working at UC Davis Health under Dr. Farzad, I had to develop a computer vision system to detect pictures of low resolution images in a poorly lit environment.
+\item There were a lot of constraints: lack of time, lack of resources...
+\item Therefore based on the constraints I was working with and the task I had ahead of me, I decided the most responsible thing to do was to use FastSAM
+\end{itemize} \newline
+
+\textbf{When did you take a risk, make a mistake, or fail? How did you respond? How did you grow from it?}
+\begin{itemize}
+\item The best example of this would be my time at VIDI research lab at UC Davis. I was to be a machine learning research assisstant but I couldn't deliver results.
+\item I was sad initially and blamed the situation. I quickly realized I was largely at fault too. Lack of communication, time and energy led to poor performance in that role.
+\item I know realize how important communication is between you and your supervisor. Among other things.
+\end{itemize} \newline
+ 
+\textbf{How have you used data to develop a strategy?}
+
+In my machine learning projects, such as the Machine Learning Data Visualization Web Dev Project, I leveraged data from neural networks, specifically visualizing the second-to-last layer of ResNet-50. This helped my team gain insights into the model's decision-making process, enabling us to adapt our training strategy to improve model accuracy. Data insights drove the direction of feature updates and model optimization, ensuring that our strategy was aligned with achieving the most accurate results. \newline
+
+\textbf{Describe a time when you took on work outside of your comfort area. What was it and what did you do?} 
+
+Either talk about first starting work on neurotech projects or VDart. \newline
+
+\textbf{Tell me about a time you disagreed with a team member or a manager about something important?}
+
+During my time as a Gen AI Product Engineering Intern at VDart, I was the one solely responsible for the front end of the product we were developing. I had domain expertise, at least within my group. There was a hot and new auth service on the market called Clerk that abstracted a lot of the confusion from designing user authentication systems like FireBase. My team member, who was working on the backend, said we needed to use both Clerk and Firebase to handle user Auth. I knew this wasn't true. We talked it out and it was clear that my team member's confusion stemmed from thinking that firebase would store the data and clerk would authenticate the data. I stood my ground and explained to him that this didn't make any sense and we only need to use one or the other. As a result, I saved us a lot of devlopment time as well as cleared up confusion with my team members. \newline
+\begin{itemize}
+\item "Give me an example of an initiative you undertook because you saw that it could benefit the whole company or your customers, but wasn’t within any group’s individual responsibility, so nothing was being done." Ownership
+\item “Give me an example of a time when you were able to deliver an important project under a tight deadline.” Deliver Results
+\item Describe a time you took the lead on a project.
+\item What did you do when you needed to motivate a group or promote collaboration on a project?
+\item “Tell me about a time when you worked against tight deadlines and didn't have time to consider all options before making a decision.” Bias for action
+\end{itemize}
+
+
+\subsection{Notes}
+
+\begin{itemize}
+\item Amazon’s behavioral interview is deeply tied to their \href{https://www.amazon.jobs/content/en/our-workplace/leadership-principles}{\textbf{Leadership Principles}}.
+\item "\textbf{Two Answers Strategy}: Prepare two stories for each behavioral question, so you can adjust based on the flow of the interview. For each type of question, I prepared 2–3 responses that I can use. When answering them in the interview, I tried to answer each behavioral question with a different experience."
+\item "When answering the '\textbf{Tell me about yourself}' question, instead of just giving basic information, use this opportunity to highlight key accomplishments and experiences that align with the role you’re applying for. For example, I used this opportunity to talk about my accolades and start off strong in the interview."
+\end{itemize}
+- Dhruv: \textbf{Customer $\rightarrow$ deadline $\rightarrow$ everything else}
+
+\subsection{Notes on Mock Interviews}
+\subsubsection{Britney 1}
+\begin{itemize}
+\item Behavioral Notes
+\item For the "tell me about yourself question" rather than saying hai I'm Prakhar, do something more like
+\item > "Hi my name is Prakhar Sinha. I previously did work as a SWE Intern at VDart Inc., Computer Vision Specialist at UC Davis Health and I was the head of the projects divison at Neurotech@Davis, where we specialzied in developing brain computer interfaces. I am a recent computer science grad from UC Davis and I currently hold expertise in the areas of AI/ML with a specialization in computer vision. I am also have a lot of experience in front end web development with React, Typescript and CSS/Tailwind."
+\item When answering a specific behavioral question, try to just stick to the principal that they are testing rather than trying to incorperate different principals into it at the same time
+\item Review leadership principals in general
+\item its ok to ask a minute to think about it
+\item Technical Notes
+\item Read the damn question
+\item You can type out your thought process on the IDE. I think it would’ve been nice for you to make a multi line comment and code out the diagrams to help you understand and visualize it better.
+\end{itemize}
+  - Be intentional with your variable names. Make them more descriptive and clear.
+
+\section{Technical}
+
+\begin{itemize}
+\item Review featrues of python that would be good for an interivew
+\item Also do a general DSA review
+\item This is how you extract a column from a 2d array:
+\begin{verbatim}
+def column(matrix, i):
+    return [row[i] for row in matrix]
+\end{verbatim}
+\item Cache friendly: \textit{Most computers have caching systems that make reading from sequential addresses in memory faster than reading from scattered addresses.} This means that if a data structure stores data in memory in a contiguous fashion, then it is more cache friendly.
+\item Questions that I haven't gotten yet:
+\begin{itemize}
+    \item \href{https://leetcode.com/problems/rotting-oranges?envType=company&envId=amazon&favoriteSlug=amazon-thirty-days}{Rotting Oranges}
+    \item \href{https://leetcode.com/problems/word-ladder?envType=company&envId=amazon&favoriteSlug=amazon-thirty-days}{Word Ladder}
+    \item \href{https://leetcode.com/problems/reorganize-string?envType=company&envId=amazon&favoriteSlug=amazon-thirty-days}{Reorganize String}
+\end{itemize}
+\end{itemize}
+
+\subsection{DSA Review}
+\subsubsection{Arrays:}
+
+An array organizes items sequentially, one after another in memory. Each position in the array has an index, starting at 0.
+
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{|l|l|}
+    \hline
+        Function & Wosrt Case Time Complexity \\ \hline
+        Space & \$O(n)\$ \\ \hline
+        Lookup & \$O(1)\$ \\ \hline
+        Append & \$O(1)\$ \\ \hline
+        Insert & \$O(n)\$ \\ \hline
+        Delete & \$O(n)\$ \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{enumerate}
+    \item Strengths
+    \begin{enumerate}
+        \item Fast Lookup times
+        \item Fast Append times
+    \end{enumerate}
+    \item Weaknesses
+    \begin{enumerate}
+        \item Fixed size, since this isn't a dynamic array
+        \item Insert and delete takes $O(n)$ unless you use a dynamic array or lazy deletion
+    \end{enumerate}
+\end{enumerate}
+
+\subsubsection{Dynamic Arrays:} 
+ 
+A dynamic array is an array with a big improvement: automatic resizing. One limitation of arrays is that they're fixed size, meaning you need to specify the number of elements your array will hold ahead of time. A dynamic array expands as you add more elements. So you don't need to determine the size ahead of time. 
+
+
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{|l|l|l|}
+    \hline
+        Function & Average Case Time Complexity & Worst Case Time Complexity \\ \hline
+        Space & \$O(n)\$ & \$O(n)\$ \\ \hline
+        Lookup & \$O(1)\$ & \$O(1)\$ \\ \hline
+        Append & \$O(1)\$ & \$O(n)\$ \\ \hline
+        Insert & \$O(n)\$ & \$O(n)\$ \\ \hline
+        Delete & \$O(n)\$ & \$O(n)\$ \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{enumerate}
+    \item Strengths
+    \begin{enumerate}
+        \item Fast Lookup times
+        \item Variable size
+        \item Cache Friendly: since an array is composed of continguous data, if you are accessing elements close to each other often, the cache is able to take advantage of it.
+    \end{enumerate}
+    \item Weaknesses
+    \begin{enumerate}   
+        \item Worst case append is quite slow. This is because the size of the array will most likely double to accommodate for many new elements.
+        \item Insert and delete are still quite slow, since you need to scoot over each element
+    \end{enumerate}
+    \item The amortized cost of append is $O(1)$ because thats what it is on average
+\end{enumerate}
+
+
+\subsubsection{Linked List} 
+ 
+A linked list organizes items sequentially, with each item storing a pointer to the next one. An item in a linked list is called a node. The first node is called the head. The last node is called the tail.
+
+
+ \begin{table}[!ht]
+    \centering
+    \begin{tabular}{|l|l|}
+    \hline
+        Function & Worst Case Time Complexity \\ \hline
+        Space & \$O(n)\$ \\ \hline
+        Prepend & \$O(1)\$ \\ \hline
+        Lookup & \$O(n)\$ \\ \hline
+        Append & \$O(1)\$ \\ \hline
+        Insert & \$O(n)\$ \\ \hline
+        Delete & \$O(n)\$ \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{enumerate}
+    \item Strengths
+    \begin{enumerate}
+        \item Fast operations on the ends, i.e prepending and appending
+        \item Flexible size without the need to double the size or something like that
+    \end{enumerate}
+    \item Weaknesses
+    \begin{enumerate}   
+        \item Slow Lookups since you have to walk through the entire list
+        \item Not cache friendly, not contiguous data
+        \item Insert and delete are still quite slow, since you need to scoot over each element
+    \end{enumerate}
+    \item Uses
+    \begin{enumerate}
+        \item Since *stacks* and *queues* only need fast operations on the ends of the list, linked lists are ideal
+    \end{enumerate}
+\end{enumerate}
+
+\subsubsection{Queue}
+ 
+FIFO!!!!
+ 
+ 
+
+ \begin{table}[!ht]
+    \centering
+    \begin{tabular}{|l|l|}
+    \hline
+        Function & Worst Case Time Complexity \\ \hline
+        Space & \$O(n)\$ \\ \hline
+        Enqueue & \$O(1)\$ \\ \hline
+        Dequeue & \$O(1)\$ \\ \hline
+        Peek & \$O(1)\$ \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{enumerate}
+    \item Strengths
+    \begin{enumerate}
+        \item Fast operations; all queue operations take $O(1)$ time
+    \end{enumerate}
+    \item Uses
+    \begin{enumerate}
+        \item Breadth-first uses a queue to keep track of which nodes to visit next
+        \item Printers, Web Servers and CPU Schedulers all use a queue in some way shape or form to keep track of things.
+    \end{enumerate}
+\end{enumerate}
+
+ \subsubsection{Hash Table} 
+ 
+ 
+The goat of data structures. Uses a hashing function to quickly access items. 
+ 
+
+ \begin{table}[!ht]
+    \centering
+    \begin{tabular}{|l|l|l|}
+    \hline
+        Function & Average Case Time Complexity & Worst Case Time Complexity \\ \hline
+        Space & \$O(n)\$ & \$O(n)\$ \\ \hline
+        Insert & \$O(1)\$ & \$O(n)\$ \\ \hline
+        Lookup & \$O(1)\$ & \$O(n)\$ \\ \hline
+        Delete & \$O(1)\$ & \$O(n)\$ \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{enumerate}
+    \item Strengths
+    \begin{enumerate}
+        \item Lookups take O(1) time on average!
+        \item Most data types can be used for keys as long as they are hash-able.
+    \end{enumerate}
+    \item Weaknesses
+    \begin{enumerate}   
+        \item Look-ups in the worst case take $O(n)$ due to collisions
+        \item There is no order so you have to look through every key if you don't know what you are looking for
+        \item Finding a value for a corresponding key is easy, going backwards is a bit harder. Like a one-way function. Looking up keys requires iterating though the entire data set in $O(n)$ time.
+        \item Not cache friendly because most implementations used a linked-list
+        \item Resizing also requires doubling the table again
+    \end{enumerate}
+\end{enumerate}
+
+\subsubsection{Trees (my behated)}
+
+Trees are used for filesystems, comments and anytime data needs to follow a hirearchical structure.
+
+\begin{itemize}
+\item Trees have \textit{leaf nodes at the bottom}
+\item Each node has a \textit{depth} that symbolizes how far away it is from the root node
+\item The \textit{height} of a tree is its maximum depth
+\item \textit{Pre-order Traversal}: curr node, left subtree, right subtree. Often the same order as DFS 
+\item \textit{In-order Traversal}: left subtree, current node, right subtree
+\item \textit{Post-order Traversals}: left subtree, right subtree, current node
+\item \textit A binary tree is \textit{balanced} if (a) the heights of its left and right subtrees differ by at most 1, and (b) both subtrees are also balanced. 
+\item In a perfect binary tree, each level has $2^n$ nodes where $n$ is the level
+\end{itemize}
+
+\subsubsection{Graphs}
+
+A graph organizes items in an interconnected network. Each item is a node (or vertex). Nodes are connected by edges.
+
+
+
+\subsection{Two Sum}
+\begin{enumerate}
+\item First, instatitate a dictionary
+\item Start iterating through the list, substract the current number from the target
+\item If the complement is already in the dictionary return the current index and the index of the complement
+\item Else, store the complment in the dictionary as a \lstinline{(number, index)} pair
+\end{enumerate}
+
+Time Complexity: \textbf{O(n)}
+
+Space Complexity: \textbf{O(n)}
+
+\begin{lstlisting}
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        hash = {}
+        n = len(nums)
+        for i in range(n):
+            complement = target - nums[i]
+            if complement in hash:
+                return [hash[complement], i]
+            hash[nums[i]] = i
+        return []
+\end{lstlisting}
+
+\subsection{LRU Cache}
+\begin{itemize}
+\item Initialize the cache with the capacity and a \lstinline{dict} and \lstinline{list} to represent the cache and the age, respectively. The 0th index is the oldest.
+\item For \lstinline{get} update the age list whenever an key is accessed.
+\item For \lstinline{put}
+\item if the value exists, remove it from the age list
+\item if the cache has reached full capacity, pop the first element (the oldest) from the age list and delete the key corresponding key from the cache
+\item finally, update the value and add it back to the age list as the newest element.
+\end{itemize}
+
+For \lstinline{\_\_init\_\_}:
+\begin{itemize}
+\item Time Complexity: \textbf{O(n)}
+\item Space Complexity: \textbf{O(n)}
+\end{itemize}
+
+For \lstinline{get}:
+\begin{itemize}
+\item Time Complexity: \textbf{O(n)}
+\item Space Complexity: \textbf{O(1)}
+\end{itemize}
+
+For \lstinline{put}:
+\begin{itemize}
+\item Time Complexity: \textbf{O(n)}
+\end{itemize}
+- Space Complexity: \textbf{O(1)}
+
+\begin{lstlisting}
+class LRUCache:
+    def __init__(self, capacity: int):
+        self.capacity = capacity
+        self.cache = {}   
+        self.age = []    
+
+    def get(self, key: int) -> int:
+        if key not in self.cache:
+            return -1
+        self.age.remove(key)
+        self.age.append(key)
+        return self.cache[key]
+
+    def put(self, key: int, value: int) -> None:
+        if key in self.cache:
+            self.age.remove(key)
+        elif len(self.cache) >= self.capacity:  
+            temp = self.age.pop(0)
+            del self.cache[temp]
+        self.cache[key] = value
+        self.age.append(key)
+        return None
+\end{lstlisting}
+
+\subsection{Number of Islands}
+\subsubsection{Solution}
+\begin{itemize}
+\item First step is input checking; check if the grid is null
+\item Secondly, set a variable for the rows and columns. Also initialize a set for the islands that have already been visited and a variable for the number of islands.
+\item Write a BFS function.
+\item From here, we interate through every node in the grid. Everytime we encounter a \lstinline{"1"}, we perform BFS and add all adjacent 1's to the visited list.
+\end{itemize}
+
+\subsubsection{Notes}
+\begin{itemize}
+\item BFS
+\item Broad/wide search of a graph that uses a FIFO queue
+\item From a given root node, we can find every node that is discoverable from that root node
+\item Keep track of nodes visited as well as a queue that denotes nodes that have yet to be visited
+\item Add the first node to the queue. pop that node and add its adjacent nodes to the queue
+\item Keep repeating this process until there are no nodes left in the queue
+\item To turn this into a DFS solution, replace \lstinline{popleft()} with \lstinline{pop()}
+\end{itemize}
+  
+\subsubsection{Time Complexity}
+Both, time and space, are \lstinline{O(n)} 
+
+\begin{lstlisting}
+class Solution:
+    def numIslands(self, grid: List[List[str]]) -> int:
+        if not grid:
+            return 0
+        rows, cols = len(grid), len(grid[0])
+        visit = set()
+        islands = 0
+
+        def bfs(r, c):
+            q = collections.deque()
+            visit.add((r, c))
+            q.append((r, c))
+            while q:
+                row, col = q.popleft()
+                directions = [[1,0], [-1, 0], [0, 1], [0, -1]]
+                for dr, dc in directions:
+                    r, c = row + dr, col + dc
+                    if (r in range(rows) and
+                        c in range(cols) and
+                        grid[r][c] == "1" and
+                        (r, c) not in visit):
+                        q.append((r, c))
+                        visit.add((r, c))
+        
+        for r in range(rows):
+            for c in range(cols):
+                if grid[r][c] == "1" and (r, c) not in visit:
+                    bfs(r, c)
+                    islands += 1
+        
+        return islands
+\end{lstlisting}
+
+\subsection{\href{https://leetcode.com/problems/merge-intervals/}{Merge Intervals}}
+
+\subsubsection{Solution}
+\begin{enumerate}
+\item Input checking: check if interval is null
+\item Sort the input list
+\item Initialize an empty answer list
+\item Run through the input list once. For each input:
+\item If there is no overlap or the interval is null, append it to the answer list
+\item Otherwise there must be an overlap, replace the last number of the last interval in the answer list with the max of the current interval and the last number.
+\end{enumerate}
+
+\subsubsection{Time/Space Complexity}
+Both are \lstinline{O(n)}
+
+\begin{lstlisting}
+class Solution:
+    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+        if len(intervals) == 1:
+            return intervals
+
+        intervals.sort(key=lambda x: x[0])
+        
+        answer = []
+        
+        for interval in intervals:
+            if not answer or answer[-1][1] < interval[0]:
+                answer.append(interval)
+            else:
+                answer[-1][1] = max(interval[1], answer[-1][1])
+                
+        return answer
+\end{lstlisting}
+
+\subsection{\href{https://leetcode.com/problems/longest-substring-without-repeating-characters/description/?envType=company&envId=amazon&favoriteSlug=amazon-thirty-days}{Longest Substring Without Repeating Characters}}
+
+\subsubsection{Solution}
+\begin{itemize}
+\item Should be solved using the sliding window problem, a method that does what is sounds like
+\item Initialize variables:
+\item \lstinline{longest = 0}
+\item \lstinline{n = len(s)}
+\item \lstinline{left = 0}
+\end{itemize}
+- The main loop will keep interating until the string produced has a duplicate. Then we slide the left side of the window one to the right.
+
+\begin{lstlisting}
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        longest = 0
+        n = len(s)
+        left = 0
+
+        for i in range(1, n + 1):
+            temp = s[left:i]
+            if len(set(temp)) == len(temp):
+                longest = max(len(temp), longest)
+            else:
+                left += 1
+
+        return longest
+\end{lstlisting}
+
+\subsection{\href{https://leetcode.com/problems/merge-sorted-array/?envType=company&envId=amazon&favoriteSlug=amazon-thirty-days}{Merge Sorted Array}}
+
+\subsubsection{Solution}
+\begin{itemize}
+\item Should utilize "moving pointer" solution
+\end{itemize}
+
+\chapter{REVISIT THIS ONE}
+
+\begin{lstlisting}
+class Solution:
+    def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
+        """
+        Do not return anything, modify nums1 in-place instead.
+        """
+        
+        last = m + n - 1
+        while m > 0 and n > 0:
+            if nums1[m - 1] > nums2[n - 1]:
+                nums1[last] = nums1[m - 1]
+                m -= 1
+            else:
+                nums1[last] = nums2[n - 1]
+                n -= 1
+            last -= 1
+        
+        while n > 0:
+            nums1[last] = nums2[n - 1]
+            n, last = n - 1, last - 1
+\end{lstlisting}
+
+\subsection{\href{https://leetcode.com/problems/trapping-rain-water/?envType=company&envId=amazon&favoriteSlug=amazon-thirty-days}{Trapping Rain Water}}
+
+\begin{itemize}
+\item Two pointers solution
+\item Start by initializing both pointers on the left and right end of the list
+\item Move the min of the two pointers one to the left or right depending on the pointer
+\end{itemize}
+
+Notice that as long as \( \text{right\_max}[i] > \text{left\_max}[i] \) (from element 0 to 6), the water trapped depends upon the left\_max, and similar is the case when \( \text{left\_max}[i] > \text{right\_max}[i] \) (from element 8 to 11).\newline
+
+So, we can say that if there is a larger bar at one end (say right), we are assured that the water trapped would be dependent on the height of the bar in the current direction (from left to right). As soon as we find the bar at the other end (right) is smaller, we start iterating in the opposite direction (from right to left).
+
+\begin{lstlisting}
+class Solution:
+    def trap(self, height: List[int]) -> int:
+        left, right = 0, len(height) - 1
+        ans = 0
+        left_max, right_max = 0, 0
+        while left < right:
+            if height[left] <= height[right]:
+                left_max = max(height[left], left_max)
+                ans += left_max - height[left]
+                left += 1
+            else:
+                right_max = max(height[right], right_max)
+                ans += right_max - height[right]
+                right -= 1
+        return ans
+\end{lstlisting}
+
+\subsection{\href{https://leetcode.com/problems/group-anagrams/?envType=company&envId=amazon&favoriteSlug=amazon-thirty-days}{Group Anagrams}}
+
+
+this one is very good ��
+
+\begin{lstlisting}
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        leDict = {}
+        for sting in strs:
+            value = ''.join(sorted(sting))
+            if value in leDict:
+                leDict[value].append(sting)
+            else:
+                leDict[value] = [sting]
+        
+        return list(leDict.values())
+
+\end{lstlisting}
+
+\subsection{\href{https://leetcode.com/problems/longest-palindromic-substring/description/?envType=company&envId=amazon&favoriteSlug=amazon-all}{Longest Palindromic Substring}}
+
+
+This is honestly one of the least optimal solutions you could come up with
+
+\begin{lstlisting}
+class Solution:
+    def longestPalindrome(self, s: str) -> str:
+        n = len(s)
+        longest = ""
+
+        for left in range(n):
+            for right in range(left + 1, n + 1):
+                temp = s[left:right]
+                if temp == temp[::-1]:
+                    if len(temp) > len(longest):
+                        longest = temp
+            
+        
+        return longest
+\end{lstlisting}
+
+\subsection{\href{https://leetcode.com/problems/most-expensive-item-that-can-not-be-bought/description/?envType=company&envId=amazon&favoriteSlug=amazon-thirty-days}{Most Expensive Item That Can Not Be Bought}}
+
+
+This is actually testing a fun concept in number theory called the "Frobenius Coin Problem". The solution is literally:
+$$g(a,b) = a \times b - a - b$$
+
+\begin{lstlisting}
+class Solution:
+    def mostExpensiveItem(self, primeOne: int, primeTwo: int) -> int:
+        return primeOne * primeTwo - primeOne - primeTwo
+\end{lstlisting}
+
+\subsection{\href{https://leetcode.com/problems/palindrome-number/?envType=company&envId=amazon&favoriteSlug=amazon-thirty-days}{Palindrome Number}}
+
+
+This might be the least optimal solution I could have come up with
+
+\begin{lstlisting}
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        if list(str(x))[::-1] == list(str(x)):
+            return True
+        else:
+            return False
+\end{lstlisting}
+
+\subsection{\href{https://leetcode.com/problems/add-two-numbers/?envType=company&envId=amazon&favoriteSlug=amazon-thirty-days}{Add Two Numbers}}
+
+
+\begin{enumerate}
+\item start by initializing a dummy node that will contain the answer and a carry
+\item initialize a 'curr' pointer
+\item loop through both lists:
+\item if l1 or l2 is none (i.e. we've reached the end) then set the corrusponding val to O. Else \lstinline{val1 = l1.val...}
+\item `tempAnswer = val1 + val2 + carry
+\item set the carry to \lstinline{tempAnswer // 10}
+\item set curr.next = \lstinline{ListNode(tempAnswer \% 10)}
+\item move curr to the next node (the one we just created)
+\item if l1 or l2 is not \lstinline{None} then move the pointer forward
+\end{enumerate}
+4. return \lstinline{dummy.next} since the first node we made had a 0 in it
+
+\begin{lstlisting}
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+
+class Solution:
+    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+        answer = ListNode(0)
+        curr = answer
+        carry = 0
+
+        while l1 or l2 or carry:
+            val1 = l1.val if l1 else 0
+            val2 = l2.val if l2 else 0
+                
+            tempAnswer = val1 + val2 + carry
+            carry = tempAnswer // 10
+            curr.next = ListNode(tempAnswer % 10)
+
+            curr = curr.next
+
+            if l1 is not None:
+                l1 = l1.next
+            if l2 is not None:
+                l2 = l2.next
+        
+        return answer.next
+\end{lstlisting}
+
+\subsection{\href{https://leetcode.com/problems/jump-game/description/?envType=company&envId=amazon&favoriteSlug=amazon-thirty-days}{Jump Game}}
+
+
+\begin{itemize}
+\item Recursive solution is too slow
+\item Funny enough I think 122A professor taught us this and I forgot
+\end{itemize}
+```py
+class Solution:
+    def canJump(self, nums: List[int]) -> bool:
+        def canJumpRecursive(nums, idx):
+            if idx == (len(nums) - 1):
+                return True
+
+            currIndex = nums[idx]
+            for i in range(1, currIndex + 1):
+                if canJumpRecursive(nums, i + idx):
+                    return True
+            return False
+
+        return canJumpRecursive(nums, 0)```
+
+\begin{lstlisting}
+class Solution:
+    def canJump(self, nums: List[int]) -> bool:
+        if len(nums) <= 1:
+            return True
+        if not any(n <= 0 for n in nums):
+            return True 
+        gas = 0
+        for n in nums:
+            if gas < 0:
+                return False
+            elif n > gas:
+                gas = n
+            gas -= 1
+        return True
+\end{lstlisting}
+
+\subsection{\href{https://leetcode.com/problems/maximum-subarray/?envType=company&envId=amazon&favoriteSlug=amazon-thirty-days}{Maximum Subarray}}
+
+\subsubsection{Notes }
+\begin{enumerate}
+\item Initialize the answer as the first element and currSum as the running sum we will compute
+\item Iterate through the array
+\item If currSum is < 0 then set it back to 0 as it is no longer contributing to the answer
+\end{enumerate}
+   2. Otherwise, add n to the current sum and see if it greater than the answer   
+
+\begin{lstlisting}
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        answer = nums[0]
+        currSum = 0
+
+        for n in nums:
+            if currSum < 0:
+                currSum = 0
+            currSum += n
+            answer = max(answer, currSum)
+
+        return answer
+\end{lstlisting}
+
+\subsection{\href{https://leetcode.com/problems/create-hello-world-function/?envType=company&envId=amazon&favoriteSlug=amazon-thirty-days}{Create Hello World Function}}
+
+\begin{lstlisting}
+function createHelloWorld() {
+    
+    return function(...args): string {
+        return "Hello World      "
+    };
+};
+\end{lstlisting}
+
+\subsection{\href{https://leetcode.com/problems/median-of-two-sorted-arrays/?envType=company&envId=amazon&favoriteSlug=amazon-thirty-days}{Median of Two Sorted Arrays}}
+
+\begin{lstlisting}
+class Solution:
+    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+        nums3 = nums2 + nums1
+        nums3.sort()
+
+        n = len(nums3)
+
+        if n % 2 == 0:
+            return (nums3[n // 2] + nums3[n // 2 - 1]) / 2
+        else:
+            return nums3[n // 2]
+\end{lstlisting}
+
+\end{document}
